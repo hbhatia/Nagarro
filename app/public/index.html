@@ -1,0 +1,58 @@
+<!-- This is Out HTML file that will be shown to user with Embeeded css-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="/script.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>ToDO Application</title>
+</head>
+
+<body>
+
+   <div id="header">My Todos</div>
+
+    <p>Active Todos</p>
+
+    <div id="todo_list_div"  class="todolist"> </div>
+
+    <br>
+
+    <div class="border"> </div>
+
+    <div id="add">
+        <div id="todo">Add ToDos</div>
+            <input type="text" id="new_input_id" placeholder="Todo Titles Goes Here ">&nbsp;&nbsp;&nbsp;
+            <input id='button' type="button" value="ADD" onclick="addTodoAJAX()">
+    </div>
+
+    <br>
+    <div class="border"> </div>
+
+    <p>Completed Todos
+        <span id="hidecomplete" onclick="hideCompleteAJAX()" >
+            Hide Completed items
+    </p>
+
+    <div id="completedtodo" class="todolist">
+
+    </div>
+
+    </span>
+
+    <br> <br>
+
+    <div class="border">
+
+    </div>
+    <p>Deleted Todos
+        <span id="hidedelete" onclick="hideDeleteAJAX()" >
+            Hide Deleted items
+    </p>
+
+    <div id="deletedtodo" class="todolist">
+    </div>
+    </span>
+
+</body>
+</html>
